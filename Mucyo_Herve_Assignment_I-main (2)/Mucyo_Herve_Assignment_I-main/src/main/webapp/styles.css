@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set a minimum height to fill the viewport */
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    width: 300px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+    
+    max-height: 80%; /* Set a maximum height to fit within the viewport */
+    overflow-y: auto; /* Add vertical scroll if content exceeds the container height */
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid #ff4500;
+    /* Change color on focus */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Keyframes for animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
